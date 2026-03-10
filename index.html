@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clements NCHS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="title-group">
+                <h1 class="site-title">National Chinese Honor Society</h1>
+                <p class="site-subtitle">Clements High School</p>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" onclick="showPage('home-page')">HOME</a></li>
+                    <li><a href="#" onclick="showPage('about-page')">ABOUT US</a></li>
+                    <li><a href="#" onclick="showPage('points-page')">POINTS</a></li>
+                    <li><a href="#" onclick="showPage('news-page')">NEWS & EVENTS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="home-page" class="page-content">
+            <div class="circle-frame">
+                <img src="nchs-home.jpg" alt="NCHS Group">
+            </div>
+            <div class="welcome-text">
+                <h2>欢迎访问我们的网站！</h2>
+                <h3>Welcome to our site!</h3>
+                 <p>We are the Clements High School chapter of the National Chinese Honor Society! Feel free to explore our site to learn more about us and what we do. </p>
+            </div>
+            <div class="button-grid">
+                <a href="#" class="squircle bg-red" onclick="showPage('about-page')">ABOUT US</a>
+                <a href="#" class="squircle bg-gold" onclick="showPage('points-page')">POINTS</a>
+                <a href="#" class="squircle bg-dark" onclick="showPage('news-page')">NEWS & EVENTS</a>
+            </div>
+            <div class="links-container">
+                <h3>Links!</h3>
+                <div id = "dynamic-home-links"></div>
+            </div>
+        </section>
+
+        <section id="about-page" class="page-content" style="display:none;">
+            <div class="content-card">
+                <h1>About Us</h1>
+                <hr>
+                <p>
+                    Welcome! We are the Clements High School chapter of the National Chinese Honor Society.
+                </p>
+                <p>
+                    According to the CLASS, "the National Chinese Honor Society (NCHS) is dedicated to the advancement of Chinese language study in public and independent secondary schools and is sponsored by the national Chinese Language Association of  Secondary-Elementary Schools (CLASS).
+                </p>
+                <p>
+                    The National Chinese Honor Society was established in November, 1993 to recognize those accomplished high school students who study Chinese as the second language. It is not only a scholastic organization but also promotes and recognizes those with good citizenship, leadership quality, and community service among qualified students. The society’s goal is to encourage its members to become life-long knowledge seekers to reach a better understanding to the Chinese language and culture, to be able to play the active role as the builders of the twenty-first century.
+                </p>                
+            </div>
+            <br>
+            <p id = "image-row"> 
+                <img src = "about-img1.jpg" alt="About Image 1">
+                <img src = "about-img2.jpg" alt="About Image 2">
+            </p>
+        </section>
+
+        <section id="points-page" class="page-content" style="display:none;">
+            <h1>Member Points</h1>
+            <div id="points-table-info">
+                <h2>How do I Earn Points?</h2>
+                <ol>
+                    <li>Meetings - 1 point for attendance, 2 points with NCHS shirt</li>
+                    <li>Song suggestion – 1 point (cap: 1 pt per person per semester) </li>
+                    <li>Performance/Presentation (members volunteer to present their own topic) - 2 points</li>
+                    <li>Meme submission – 1 point (cap: 1 pt per semester- Additional 0.5 point rewarded if meme is high quality enough to be chosen and posted on the NCHS Instagram (go follow it))</li>
+                    <li>Asia Society (virtual or in-person events) – 1 point (find events on asiasociety.org and write a paragraph reflection on the event)</li>
+                    <li>Other volunteering events - Please check Facebook and emails to stay up to date</li>
+                    <li>Bringing Chinese snacks/drinks to meetings - 1 point per item, must be shareable! (cap 2 times per semester)</li>
+                    <li>Miscellaneous points will be awarded at meetings (games, activities, contests, etc.)</li>
+                </ol>
+            </div>
+            <div id="points-table-target"></div>
+        </section>
+
+        <section id="news-page" class="page-content" style="display:none;">
+            <h1>News & Events</h1>
+            <div id="blog-container">
+            </div>
+            <div class="calendar-frame">
+                <iframe src="https://calendar.google.com/calendar/embed?src=clementsnchs%40gmail.com&ctz=America%2FChicago
+                    " style="border:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </section>
+        <div class="sakura-container">
+            <span class="petal"></span>
+            <span class="petal"></span>
+            <span class="petal"></span>
+            <span class="petal"></span>
+            <span class="petal"></span>
+            <span class="petal"></span>
+            <span class="petal"></span>
+            <span class="petal"></span>
+        </div>
+    </main>
+    <div class="side-decoration left toggle-decor">学无止境</div> <div class="side-decoration right toggle-decor">厚德载物</div> 
+    <footer class="main-footer">
+        <div class="footer-item">
+            <div class="footer-icon email-bg">
+                <i class="fas fa-envelope"></i> </div>
+            <div class="footer-text">
+                <strong>Email</strong>
+                <p>clementsnchs@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-item">
+            <div class="footer-icon insta-bg">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="footer-text">
+                <strong>Instagram</strong>
+                <p>@clementsnchs</p>
+            </div>
+        </div>
+
+        <div class="footer-item">
+            <div class="footer-icon copyright-bg">
+                <span>©</span>
+            </div>
+            <div class="footer-text">
+                <p>© 2025 Clements NCHS</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
