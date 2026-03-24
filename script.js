@@ -53,7 +53,7 @@ async function loadPointsData() {
         const rows = csvData.split('\n').map(row => row.split(','));
 
         // FIXED: Corrected "rflow" typo and added max-height
-        let html = '<div class="points-scroll-wrapper" style="max-height: 450px; overflow-y: auto; border: 1px solid rgba(0,0,0,0.1); border-radius: 8px;">';
+        let html = '<div class="points-scroll-wrapper" style="max-height: 450px; overflow-y: auto; border: 1px solid rgba(0,0,0,0.1); border-radius: 8px; max-width: 800px; margin: 0 auto; overflow-x: auto;">';
         html += "<table class='points-table'><thead><tr>";
         
         // Headers
